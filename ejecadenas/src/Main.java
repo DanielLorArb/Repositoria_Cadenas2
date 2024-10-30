@@ -15,8 +15,15 @@ public class Main {
 //        Ejecadenasybucles.NumeroDeLaSuerte();
 //        Ejecadenasybucles.actividadexcepciones();
 //        Ejecadenasybucles.EjercicioAlturaPersona();
-        Ejecadenasybucles.DiaDeLaSemana();
-        Ejecadenasybucles.Calculadora();
+//        Ejecadenasybucles.DiaDeLaSemana();
+//        Ejecadenasybucles.Calculadora();
+//        Ejecadenasybucles.ISBN();
+//        Ejecadenasybucles.ALEATORIO();
+//        Ejecadenasybucles.Eje1Dados();
+//        Ejecadenasybucles.eje2Random();
+//        Ejecadenasybucles.Eje3Random();
+
+
 
 
 

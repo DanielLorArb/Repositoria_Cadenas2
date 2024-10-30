@@ -1,6 +1,9 @@
 import java.time.LocalDateTime;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
+
+import static java.lang.Math.PI;
 
 
 public class ejecadenasybucles {
@@ -517,6 +520,123 @@ int posicion1 = Frasecita.indexOf("Mundo", 0);
 
         }
     }
+
+    public static void ALEATORIO (){
+
+        Random aleatorios = new Random();
+
+        int numero = aleatorios.nextInt();
+        System.out.println(numero);
+
+        numero = aleatorios.nextInt(899) + 1;
+        System.out.println(numero);
+
+        double numero_decimal = aleatorios.nextDouble()*3 + 1;
+        System.out.println(numero_decimal);
+
+        double numero_math = Math.random()*3+1;
+        System.out.println(numero_math);
+
+        System.out.println(PI);
+    }
+
+
+    public static void Eje1Dados(){
+
+        Random aleatorio = new Random();
+
+        int dado1 = aleatorio.nextInt(6)+1;
+        System.out.println("Dado1:" + dado1);
+        int dado2 = aleatorio.nextInt(6)+1;
+        System.out.println("Dado 2:" + dado2);
+        int resultado = dado1 + dado2;
+        System.out.println("El resultado de la suma de los dos dados es:  " + resultado);
+
+    }
+    public static void eje2Random(){
+
+        Random aleatorio = new Random();
+
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        int longitud = 10;
+        int posicion;
+
+        String contrasenya = "";
+
+        for (int i=0; i<longitud;i++){
+             posicion = aleatorio.nextInt(caracteres.length());
+             contrasenya += caracteres.charAt(posicion);
+        }
+
+        System.out.println(contrasenya);
+
+    }
+    public  static void Eje3Random(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        Random aleatorio = new Random();
+        int min;
+        int max;
+        int nalt;
+        while (true) {
+
+            System.out.println("Por favor introduzca el valor minimo");
+            min = scanner.nextInt();
+
+            System.out.println("Por favor introduzca el valor maximo");
+            max = scanner.nextInt();
+
+            if (min < max) {
+                break;
+            } else {
+                System.out.println("El valor minimo debe de ser menor que el valor maximo por favor introduzca valores correctos");
+            }
+        }
+            System.out.println("Escriba la cantidad de numeros aleatorios que quieres");
+            nalt = scanner.nextInt();
+            System.out.println("Numeros aleatorios generados");
+
+            for (int i=0; i<nalt; i++){
+                 int numero_aleatorio = aleatorio.nextInt((max - min +1))+ min;
+                 System.out.println(numero_aleatorio);
+            }
+    }
+    public static void Eje4random(){
+        Random aleatorio = new Random();
+
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        String contrasenya = "";
+        int longitud = aleatorio.nextInt(3)+ 6;
+
+        for (int i=0; i<longitud;i++){
+            int posicion = aleatorio.nextInt(caracteres.length());
+            contrasenya += caracteres.charAt(posicion);
+        }
+        System.out.println(contrasenya);
+
+    }
+
+    public static void ejemplo2(){
+        
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
